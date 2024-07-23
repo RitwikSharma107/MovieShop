@@ -1,0 +1,12 @@
+@model ApplicationCore.Model.Response.PaginatedResultSet<MovieCard>
+
+<div class="movie-grid">
+    @foreach (var m in Model.Items)
+    {
+        <div class = "movie-card">
+            <a href="@Url.Action("GetMovieDetailsResult", "Movie", new { id = m.Id })" class="movie-poster">
+                <img src="@m.PosterUrl" alt="@m.Id">
+            </a>
+        </div>
+    }
+</div>

@@ -1,0 +1,84 @@
+﻿@model ApplicationCore.Model.Response.PaginatedResultSet<MovieCard>
+
+@{
+    ViewData["Title"] = "Home Page";
+    var genreId = ViewBag.SelectedGenre;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+<div class="container">
+    @* Movie Card *@
+    <partial name="_MovieCard" model="Model"/>
+    
+    @* Pagination *@
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            @if (Model.HasPreviousPage)
+            {
+            <li class="page-item">
+                <a class="page-link" href="@Url.Action("Index", new { genre = genreId, pageSize = Model.PageSize, pageNumber = Model.PageNumber - 1 })" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            }
+
+            @{
+            int startPage = Math.Max(Model.PageNumber - 2, 1);
+            int endPage = Math.Min(Model.PageNumber + 2, Model.TotalPages);
+
+            if (Model.PageNumber > 3)
+            {
+            <li class="page-item">
+                <a class="page-link" href="@Url.Action("Index", new { genre = genreId, pageSize = Model.PageSize, pageNumber = 1 })">1</a>
+            </li>
+            @if (startPage > 2)
+            {
+            <li class="page-item disabled">
+                <span class="page-link">...</span>
+            </li>
+            }
+            }
+
+            for (int i = startPage; i <= endPage; i++)
+            {
+            <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                <a class="page-link" href="@Url.Action("Index", new { genre = genreId, pageSize = Model.PageSize, pageNumber = i })">@i</a>
+            </li>
+            }
+
+            if (Model.PageNumber < Model.TotalPages - 2)
+            {
+            @if (endPage < Model.TotalPages - 1)
+            {
+            <li class="page-item disabled">
+                <span class="page-link">...</span>
+            </li>
+            }
+            <li class="page-item">
+                <a class="page-link" href="@Url.Action("Index", new { genre = genreId, pageSize = Model.PageSize, pageNumber = Model.TotalPages })">@Model.TotalPages</a>
+            </li>
+            }
+            }
+
+            @if (Model.HasNextPage)
+            {
+            <li class="page-item">
+                <a class="page-link" href="@Url.Action("Index", new { genre = genreId, pageSize = Model.PageSize, pageNumber = Model.PageNumber + 1 })" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+            }
+        </ul>
+    </nav>
+
+
+</div>
+
+</body>
+
+</html>

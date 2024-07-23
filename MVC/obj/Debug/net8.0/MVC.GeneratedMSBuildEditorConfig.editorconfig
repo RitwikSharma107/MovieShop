@@ -1,0 +1,79 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MovieShop
+build_property.RootNamespace = MovieShop
+build_property.ProjectDir = /Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/Views/Movie/GetMovieDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvR2V0TW92aWVEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/Views/Movie/GetMovieDetailsResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvR2V0TW92aWVEZXRhaWxzUmVzdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/Views/Movie/HighestGrossing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvSGlnaGVzdEdyb3NzaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/Views/Movie/HighestGrossingResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvSGlnaGVzdEdyb3NzaW5nUmVzdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/Views/Movie/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/Views/Shared/Components/Genres/_GenreDropDown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvR2VucmVzL19HZW5yZURyb3BEb3duLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/Views/Shared/_MovieCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Nb3ZpZUNhcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/Views/Shared/_NavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19OYXZCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-tgi9xj0eup

@@ -1,0 +1,146 @@
+@model ApplicationCore.Model.Response.MovieResponseModel
+
+@{
+    ViewBag.Title = "Movies Page";
+    var releaseYear = Model.ReleaseDate.HasValue ? Model.ReleaseDate.Value.ToString("yyyy") : "Unknown";
+}
+<style>
+    .genre-badge {
+        border-radius: 50px;
+        padding: 5px 10px;
+        margin: 2px;
+        background-color: #6c757d;
+        color: white;
+    }
+</style>
+<div class="container">
+    <div class="row bg-dark text-white position-relative overflow-hidden" style="height: 500px;">
+        <!-- Background Image -->
+        <div class="position-absolute w-100 h-100" style="background-image: url('@Model.BackdropUrl'); background-size: cover; background-position: center; filter: brightness(50%);"></div>
+
+        <!-- Content -->
+        <div class="d-flex align-items-center position-relative w-100 h-100 p-3">
+            <div class="col-xl-3">
+                <img src="@Model.PosterUrl" class="img-fluid rounded" alt="Poster Image"/>
+            </div>
+            <div class="col-xl-6 d-flex flex-column justify-content-center center" style="padding: 20px">
+                <h3>@Model.Title</h3>
+                <p>@Model.Tagline</p>
+                <p>@(Model.RunTime / 60)h @(Model.RunTime % 60)m | @releaseYear</p>
+                <div class="mb-2">
+                    @foreach (var genre in Model.Genres)
+                    {
+                    <span class="genre-badge">@genre.Name</span>
+                    }
+                </div>
+                <p class="font-weight-bold text-warning">Rating</p>
+                <p>@Model.Overview</p>
+            </div>
+            <div class="col-xl-3 d-flex justify-content-center align-items-center">
+                <button class="btn btn-primary mx-2" data-toggle="modal" data-target="#reviewModal">Review</button>
+                <button class="btn btn-success mx-2" data-toggle="modal" data-target="#buyModal">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-3">
+            <div class="p-3 border rounded bg-light">
+                <h4>MOVIE FACTS</h4>
+                <p>Release Date: @Model.ReleaseDate?.ToString("MMM dd, yyyy")</p>
+                <p>Run Time: @(Model.RunTime / 60)h @(Model.RunTime % 60)m</p>
+                <p>Box Office: $@Model.Revenue.ToString()</p>
+                <p>Budget: $@Model.Budget.ToString()</p>
+                @* <h5>TRAILERS</h5> *@
+                @* <a href="@Model.Trailers[0].TrailerUrl"><p>@Model.Title</p></a> *@
+            </div>
+        </div>
+        <div class="col-md-9 justify-content-center">
+            <div class="p-3 border rounded bg-light">
+                <h4 class="text-center">CAST</h4>
+                @if (Model.Casts != null && Model.Casts.Any())
+                {
+                <table class="table table-bordered table-striped text-center">
+                    <thead>
+                    <tr>
+                        <th>Profile</th>
+                        <th>Name</th>
+                        <th>Character</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var cast in Model.Casts)
+                    {
+                    <tr>
+                        <td><img src="@cast.ProfilePath" alt="@cast.Name" class="img-fluid rounded-circle" style="width: 50px; height: 50px; object-fit: cover;"/></td>
+                        <td><strong>@cast.Name</strong></td>
+                        <td><em class="text-muted">@cast.Character</em></td>
+                    </tr>
+                    }
+                    </tbody>
+                </table>
+                }
+                else
+                {
+                <p>No cast details available</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Buy Movie Modal -->
+<div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="buyModalLabel">Buy Movie</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to buy this movie?</p>
+                <p>Price: $@Model.Price</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Purchase</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Review Modal -->
+<div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="reviewModalLabel">Review Movie</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <select class="form-control" id="rating">
+                        @for (int i = 1; i <= 10; i++)
+                        {
+                        <option value="@i">@i</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reviewText">Review</label>
+                    <textarea class="form-control" id="reviewText" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+

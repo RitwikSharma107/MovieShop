@@ -1,0 +1,21 @@
+@{
+    ViewBag.Title = "Select Movies";
+    Layout = "_Layout";
+}
+
+<br>
+<h2>Select Number of Highest Grossing Movies</h2>
+
+<form asp-action="HighestGrossing" method="post">
+    <div class="form-group">
+        <label for="count">Number of Movies:</label>
+        <select id="count" name="count" class="form-control">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+        </select>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
