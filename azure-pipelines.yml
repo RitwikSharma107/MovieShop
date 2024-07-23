@@ -15,10 +15,4 @@ steps:
     command: 'build'
     projects: '**/*.csproj'
 
-- task: DownloadBuildArtifacts@1
-  inputs:
-    buildType: 'current'
-    downloadType: 'single'
-    artifactName: 'drop'
-    itemPattern: '**/*.zip'
-    downloadPath: '$(System.ArtifactsDirectory)'
+- task: PublishBuildArtifacts@1
