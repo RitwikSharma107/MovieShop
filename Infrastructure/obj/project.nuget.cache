@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jHQWKaRBZdXd00id24853JNzgm6BbpBnhbb2bCK5lT50ZnU8hwhjkgoMCv8cEwVRAMxuHb14I/OxNNKOX2BELg==",
+  "dgSpecHash": "9SKT0wX9lUI=",
   "success": true,
-  "projectFilePath": "/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/Infrastructure/Infrastructure.csproj",
+  "projectFilePath": "/Users/_ritwik_sharma_/Documents/Github/MovieShop/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/_ritwik_sharma_/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/_ritwik_sharma_/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",

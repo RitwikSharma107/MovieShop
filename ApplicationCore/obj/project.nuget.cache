@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Kb8daay5JqIBVUHsEGxT3DNBJNtVKkmPYp4CR0RbNoWFd6PS9hkQoEzEt4/oZIzR0+dK8+v59qkTLSU71LLFmQ==",
+  "dgSpecHash": "XUrLl4f/vOY=",
   "success": true,
-  "projectFilePath": "/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/ApplicationCore/ApplicationCore.csproj",
+  "projectFilePath": "/Users/_ritwik_sharma_/Documents/Github/MovieShop/ApplicationCore/ApplicationCore.csproj",
   "expectedPackageFiles": [
     "/Users/_ritwik_sharma_/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/_ritwik_sharma_/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",

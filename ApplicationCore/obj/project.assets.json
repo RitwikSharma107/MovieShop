@@ -4112,11 +4112,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/ApplicationCore/ApplicationCore.csproj",
+      "projectUniqueName": "/Users/_ritwik_sharma_/Documents/Github/MovieShop/ApplicationCore/ApplicationCore.csproj",
       "projectName": "ApplicationCore",
-      "projectPath": "/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/ApplicationCore/ApplicationCore.csproj",
+      "projectPath": "/Users/_ritwik_sharma_/Documents/Github/MovieShop/ApplicationCore/ApplicationCore.csproj",
       "packagesPath": "/Users/_ritwik_sharma_/.nuget/packages/",
-      "outputPath": "/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/ApplicationCore/obj/",
+      "outputPath": "/Users/_ritwik_sharma_/Documents/Github/MovieShop/ApplicationCore/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/_ritwik_sharma_/.nuget/NuGet/NuGet.Config"
@@ -4137,6 +4137,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {

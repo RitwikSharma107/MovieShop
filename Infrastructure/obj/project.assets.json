@@ -4132,11 +4132,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/Infrastructure/Infrastructure.csproj",
+      "projectUniqueName": "/Users/_ritwik_sharma_/Documents/Github/MovieShop/Infrastructure/Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/Infrastructure/Infrastructure.csproj",
+      "projectPath": "/Users/_ritwik_sharma_/Documents/Github/MovieShop/Infrastructure/Infrastructure.csproj",
       "packagesPath": "/Users/_ritwik_sharma_/.nuget/packages/",
-      "outputPath": "/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/Infrastructure/obj/",
+      "outputPath": "/Users/_ritwik_sharma_/Documents/Github/MovieShop/Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/_ritwik_sharma_/.nuget/NuGet/NuGet.Config"
@@ -4151,8 +4151,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/ApplicationCore/ApplicationCore.csproj": {
-              "projectPath": "/Users/_ritwik_sharma_/Documents/Github/full_stack_dev/MovieShop/ApplicationCore/ApplicationCore.csproj"
+            "/Users/_ritwik_sharma_/Documents/Github/MovieShop/ApplicationCore/ApplicationCore.csproj": {
+              "projectPath": "/Users/_ritwik_sharma_/Documents/Github/MovieShop/ApplicationCore/ApplicationCore.csproj"
             }
           }
         }
@@ -4161,6 +4161,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
