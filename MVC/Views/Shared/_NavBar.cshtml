@@ -2,7 +2,7 @@
     <nav class="navbar">
         <div class="container">
             <div class="d-flex align-items-center">
-                <a href="#" id="homeLink" class="navbar-brand">Ritwik's Movie Shop</a>
+                <a href="#" id="homeLink" class="navbar-brand">Movie Shop</a>
                 @* Calls/Injects the Genres View component and passes a parameter selectedGenre with the value from ViewBag.SelectedGenre. *@
                 @await Component.InvokeAsync("Genres", new { selectedGenre = ViewBag.SelectedGenre as string })
             </div>
